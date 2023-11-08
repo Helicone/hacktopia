@@ -159,18 +159,14 @@ export default function WaitlistPage() {
       <div className="flex flex-col lg:flex-row justify-center mx-auto mt-4 lg:gap-6 lg:hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://posthog.com/brand/posthog-logo-black.svg"
+          src="/posthog-logo-black.svg"
           alt="PostHog Logo"
           className="h-12 "
         />
         <div className="text-3xl font-bold my-4 mx-auto">+</div>
 
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="https://raw.githubusercontent.com/Helicone/helicone/main/docs/logo/light.svg"
-          alt="Helicone Logo"
-          className="h-12 "
-        />
+        <img src="/helicone-logo.svg" alt="Helicone Logo" className="h-12 " />
       </div>
     </div>
   );
