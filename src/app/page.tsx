@@ -156,6 +156,14 @@ export default function WaitlistPage() {
                 Sign Up
               </button>
             </form>
+            {message && (
+              <p className="text-center text-green-500 font-bold mt-4">
+                {message}
+              </p>
+            )}
+            {error && (
+              <p className="text-center text-red-500 font-bold mt-4">{error}</p>
+            )}
           </div>
         </div>
       </div>
