@@ -36,7 +36,6 @@ h1 {
   font-weight: 200;
   font-style: italic;
   color: #fff;
-  padding: 4rem 6rem 5.5rem;
   text-transform: uppercase;
   animation: flicker 5s infinite alternate;     
 }

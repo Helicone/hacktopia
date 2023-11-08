@@ -43,8 +43,11 @@ export default function WaitlistPage() {
 
   return (
     <div className="container mx-auto p-4 justify-center flex flex-col min-h-screen">
-      <h1 className="text-7xl  mb-4 font-mono h-14 mx-auto hidden lg:block">
+      <h1 className="text-7xl  my-16 font-mono h-14 mx-auto hidden lg:block">
         Hacktopia 2023
+      </h1>
+      <h1 className="text-5xl  my-4 font-mono h-14 mx-auto lg:hidden">
+        Hacktopia
       </h1>
 
       <div className="lg:flex flex-col lg:flex-row justify-center mx-auto mb-4 lg:gap-6 hidden">
@@ -65,12 +68,12 @@ export default function WaitlistPage() {
         style={{ backgroundColor: "#F2EBDB" }}
       >
         <div className="flex flex-col align-middle justify-center mx-12 max-w-sm">
-          <p className="text-xl mx-auto mb-6 text-center font-light tracking-wide leading-relaxed">
+          <p className="text-sm text-left lg:text-xl mx-auto mb-6 lg:text-center font-light tracking-wide leading-relaxed">
             Get ready for the ultimate coding experience at{" "}
             <span className="font-bold">Hacktopia</span>, the place where
             developers and tech enthusiasts collaborate to transform their big
             ideas into reality!
-            <span className="block font-bold mt-2">
+            <span className="block font-bold mt-8">
               {" "}
               Date: December 2nd, 2023{" "}
             </span>
