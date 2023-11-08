@@ -42,7 +42,7 @@ export default function WaitlistPage() {
   };
 
   return (
-    <div className="container mx-auto p-4 justify-center flex flex-col lg:h-screen">
+    <div className="container mx-auto p-4 justify-center flex flex-col min-h-screen">
       <h1 className="text-7xl  mb-4 font-mono h-14 mx-auto hidden lg:block">
         Hacktopia 2023
       </h1>
