@@ -44,7 +44,7 @@ export default function WaitlistPage() {
   return (
     <div className="container mx-auto p-4 justify-center flex flex-col min-h-screen">
       <h1 className="text-7xl  my-16 font-mono h-14 mx-auto hidden lg:block">
-        Hacktopia 2023
+        Hacktopia
       </h1>
       <h1 className="text-5xl  my-4 font-mono h-14 mx-auto lg:hidden">
         Hacktopia
