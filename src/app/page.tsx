@@ -64,109 +64,229 @@ export default function WaitlistPage() {
       </div>
       {/* R=242, G=235, B=219*/}
       <div
-        className="flex flex-col lg:flex-row justify-center rounded-lg shadow-lg p-4 max-w-5xl mx-auto"
+        className="flex flex-col lg:flex-col justify-center rounded-lg shadow-lg p-4 max-w-5xl mx-auto"
         style={{ backgroundColor: "#F2EBDB" }}
       >
-        <div className="flex flex-col align-middle justify-center mx-12 max-w-sm">
-          <p className="text-sm text-left lg:text-xl mx-auto mb-6 lg:text-center font-light tracking-wide leading-relaxed">
-            Get ready for the ultimate coding experience at{" "}
-            <span className="font-bold">Hacktopia</span>, the place where
-            developers and tech enthusiasts collaborate to transform their big
-            ideas into reality!
-            <span className="block font-bold mt-8">
-              {" "}
-              Date: December 2nd, 2023{" "}
-            </span>
-            <span className="block font-bold">
-              {" "}
-              Location: The Mission, San Francisco{" "}
-            </span>
-          </p>
-        </div>
-        <div className="flex flex-col justify-center w-full">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/hacktopia.png"
-            alt="Hacktopia"
-            className="h-96 w-96 mx-auto"
-          />
-          <div>
-            <form
-              className="space-y-4 max-w-lg mx-auto"
-              onSubmit={handleSubmit}
-            >
-              <div
-                className="grid grid-cols-2 gap-4"
-                style={{ gridTemplateColumns: "1fr 1fr" }}
+        <div className="flex flex-col lg:flex-row justify-center p-4 max-w-5xl mx-auto">
+          <div className="flex flex-col align-middle justify-center mx-12 max-w-sm">
+            <p className="text-sm text-left lg:text-xl mx-auto mb-6 lg:text-center font-light tracking-wide leading-relaxed">
+              Get ready for the ultimate coding experience at{" "}
+              <span className="font-bold">Hacktopia</span>, the place where
+              developers and tech enthusiasts collaborate to transform their big
+              ideas into reality!
+              <span className="block font-bold mt-8">
+                {" "}
+                Date: December 2nd, 2023{" "}
+              </span>
+              <span className="block font-bold">
+                {" "}
+                Location: The Mission, San Francisco{" "}
+              </span>
+            </p>
+          </div>
+          <div className="flex flex-col justify-center w-full">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/hacktopia.png"
+              alt="Hacktopia"
+              className="h-96 w-96 mx-auto"
+            />
+            <div>
+              <form
+                className="space-y-4 max-w-lg mx-auto"
+                onSubmit={handleSubmit}
               >
+                <div
+                  className="grid grid-cols-2 gap-4"
+                  style={{ gridTemplateColumns: "1fr 1fr" }}
+                >
+                  <input
+                    type="text"
+                    name="first_name"
+                    placeholder="First name"
+                    value={formData.first_name}
+                    onChange={handleChange}
+                    required
+                    className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
+                  />
+                  <input
+                    type="text"
+                    name="last_name"
+                    placeholder="Last name"
+                    value={formData.last_name}
+                    onChange={handleChange}
+                    required
+                    className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
+                  />
+                </div>
+                <div
+                  className="grid grid-cols-2 gap-4"
+                  style={{ gridTemplateColumns: "1fr 1fr" }}
+                >
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Company (Optional)"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
+                  />
+                  <input
+                    type="text"
+                    name="title"
+                    placeholder="Title (Optional)"
+                    value={formData.title}
+                    onChange={handleChange}
+                    className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
+                  />
+                </div>
                 <input
-                  type="text"
-                  name="first_name"
-                  placeholder="First name"
-                  value={formData.first_name}
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  value={formData.email}
                   onChange={handleChange}
                   required
                   className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
                 />
-                <input
-                  type="text"
-                  name="last_name"
-                  placeholder="Last name"
-                  value={formData.last_name}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
-                />
-              </div>
-              <div
-                className="grid grid-cols-2 gap-4"
-                style={{ gridTemplateColumns: "1fr 1fr" }}
-              >
-                <input
-                  type="text"
-                  name="company"
-                  placeholder="Company (Optional)"
-                  value={formData.company}
-                  onChange={handleChange}
-                  className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
-                />
-                <input
-                  type="text"
-                  name="title"
-                  placeholder="Title (Optional)"
-                  value={formData.title}
-                  onChange={handleChange}
-                  className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
-                />
-              </div>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
-              />
 
-              <button
-                type="submit"
-                className="w-full bg-gray-900 text-white rounded-lg p-2"
-              >
-                Sign Up
-              </button>
-            </form>
-            {message && (
-              <p className="text-center text-green-500 font-bold mt-4">
-                {message}
-              </p>
-            )}
-            {error && (
-              <p className="text-center text-red-500 font-bold mt-4">{error}</p>
-            )}
+                <button
+                  type="submit"
+                  className="w-full bg-gray-900 text-white rounded-lg p-2"
+                >
+                  Sign Up
+                </button>
+              </form>
+              {message && (
+                <p className="text-center text-green-500 font-bold mt-4">
+                  {message}
+                </p>
+              )}
+              {error && (
+                <p className="text-center text-red-500 font-bold mt-4">
+                  {error}
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
+        <div className="mt-10">
+          {/* This div is empty and just provides spacing */}
+        </div>
+        <div className="p-4">
+          <h2 className="text-3xl font-bold text-center mb-6">Event Details</h2>
+          <div className="flex flex-col lg:flex-row justify-center p-4 max-w-5xl mx-auto">
+            {/* <div className="flex flex-col md:flex-row justify-between"> */}
+            <div className="md:w-1/2 md:pr-4 mb-4 md:mb-0 ">
+              {/* Schedule */}
+              <div className="text-left mb-6">
+                <h3 className="text-lg font-bold">Schedule</h3>
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "auto 1fr",
+                    gap: "10px",
+                    alignItems: "center",
+                  }}
+                >
+                  <div style={{ fontWeight: "bold" }}>9am-10am:</div>
+                  <div>Coffee + Registration</div>
+
+                  <div style={{ fontWeight: "bold" }}>10am-10:30am:</div>
+                  <div>Kickoff + Word from our sponsors</div>
+
+                  <div style={{ fontWeight: "bold" }}>10:30am-12:00pm:</div>
+                  <div>Hacking session</div>
+
+                  <div style={{ fontWeight: "bold" }}>12:00pm-1:00pm:</div>
+                  <div>Lunch break</div>
+
+                  <div style={{ fontWeight: "bold" }}>1:00pm-5:30pm:</div>
+                  <div>Hacking (Submissions end at 5:30pm)</div>
+
+                  <div style={{ fontWeight: "bold" }}>3:00pm-3:30pm:</div>
+                  <div>Agent Workshop w/ Agent or AutoGPT</div>
+
+                  <div style={{ fontWeight: "bold" }}>3:30pm-4:00pm:</div>
+                  <div>Observability Workshop w/ PostHog + Helicone</div>
+
+                  <div style={{ fontWeight: "bold" }}>6:00pm:</div>
+                  <div>Dinner</div>
+
+                  <div style={{ fontWeight: "bold" }}>7:00pm:</div>
+                  <div>Presentations</div>
+
+                  <div style={{ fontWeight: "bold" }}>8:00pm:</div>
+                  <div>Finale</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className="md:w-1/2 md:pl-4">
+              <div className="text-left mb-6">
+                <h3 className="text-lg font-bold">Judging Criteria</h3>
+                <ul className="list-disc list-inside">
+                  <li>Wackiness - Uniqueness of the project</li>
+                  <li>Impact - Social impact and market potential</li>
+                  <li>
+                    Technical Challenge - Complexity of the implementation
+                  </li>
+                </ul>
+              </div>
+
+              {/* Judges */}
+              <div className="text-left mb-6">
+                <h3 className="text-lg font-bold">Judges</h3>
+                <ul className="list-disc list-inside">
+                  <li>
+                    Casey Aylward (Accel) -{" "}
+                    <a
+                      href="https://twitter.com/caseyaylward"
+                      className="text-blue-500"
+                    >
+                      Twitter
+                    </a>
+                  </li>
+                  <li>
+                    Bihan Jiang (Scale) -{" "}
+                    <a
+                      href="https://twitter.com/bihanjiang"
+                      className="text-blue-500"
+                    >
+                      Twitter
+                    </a>
+                  </li>
+                  <li>
+                    Yoko Li (a16z) -{" "}
+                    <a
+                      href="https://twitter.com/stuffyokodraws"
+                      className="text-blue-500"
+                    >
+                      Twitter
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Prizes */}
+              <div className="text-left mb-6">
+                <h3 className="text-lg font-bold">Prizes</h3>
+                <p>
+                  Over $2,000 in prizes including Meta Quest 3, Airpod Max, and
+                  Steam Deck OLED.
+                </p>
+              </div>
+
+              <div className="text-left mb-6">
+                <h3 className="text-lg font-bold">Sign Up Deadline</h3>
+                <p>December 1st, 9am PST</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       <div className="flex flex-col lg:flex-row justify-center mx-auto mt-4 lg:gap-6 lg:hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
