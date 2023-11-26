@@ -197,16 +197,19 @@ export default function WaitlistPage() {
                   <div style={{ fontWeight: "bold" }}>12:00pm-1:00pm:</div>
                   <div>Lunch break</div>
 
-                  <div style={{ fontWeight: "bold" }}>1:00pm-6:00pm:</div>
-                  <div>Hacking (Submissions end at 5:30pm)</div>
+                  <div style={{ fontWeight: "bold" }}>1:00pm-5:30pm:</div>
+                  <div>Hacking</div>
 
-                  <div style={{ fontWeight: "bold" }}>6:00pm:</div>
+                  <div style={{ fontWeight: "bold" }}>5:30pm-6:00pm:</div>
+                  <div>Submissions</div>
+
+                  <div style={{ fontWeight: "bold" }}>6:00pm-7:00pm:</div>
                   <div>Dinner</div>
 
-                  <div style={{ fontWeight: "bold" }}>7:00pm:</div>
+                  <div style={{ fontWeight: "bold" }}>7:00pm-8:00pm:</div>
                   <div>Presentations</div>
 
-                  <div style={{ fontWeight: "bold" }}>8:00pm:</div>
+                  <div style={{ fontWeight: "bold" }}>8:00pm-8:30pm:</div>
                   <div>Finale</div>
                 </div>
               </div>
@@ -228,15 +231,6 @@ export default function WaitlistPage() {
                 <h3 className="text-lg font-bold">Judges</h3>
                 <ul className="list-disc list-inside">
                   <li>
-                    Casey Aylward (Accel) -{" "}
-                    <a
-                      href="https://twitter.com/caseyaylward"
-                      className="text-blue-500"
-                    >
-                      Twitter
-                    </a>
-                  </li>
-                  <li>
                     Bihan Jiang (Scale) -{" "}
                     <a
                       href="https://twitter.com/bihanjiang"
@@ -245,6 +239,16 @@ export default function WaitlistPage() {
                       Twitter
                     </a>
                   </li>
+                  <li>
+                    Casey Aylward (Accel) -{" "}
+                    <a
+                      href="https://twitter.com/caseyaylward"
+                      className="text-blue-500"
+                    >
+                      Twitter
+                    </a>
+                  </li>
+
                   <li>
                     Yoko Li (a16z) -{" "}
                     <a
