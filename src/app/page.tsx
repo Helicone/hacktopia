@@ -170,15 +170,11 @@ export default function WaitlistPage() {
             </div>
           </div>
         </div>
-        <div className="mt-10">
-          {/* This div is empty and just provides spacing */}
-        </div>
+        <div className="mt-10"></div>
         <div className="p-4">
           <h2 className="text-3xl font-bold text-center mb-6">Event Details</h2>
           <div className="flex flex-col lg:flex-row justify-center p-4 max-w-5xl mx-auto">
-            {/* <div className="flex flex-col md:flex-row justify-between"> */}
             <div className="md:w-1/2 md:pr-4 mb-4 md:mb-0 ">
-              {/* Schedule */}
               <div className="text-left mb-6">
                 <h3 className="text-lg font-bold">Schedule</h3>
                 <div
@@ -201,14 +197,8 @@ export default function WaitlistPage() {
                   <div style={{ fontWeight: "bold" }}>12:00pm-1:00pm:</div>
                   <div>Lunch break</div>
 
-                  <div style={{ fontWeight: "bold" }}>1:00pm-5:30pm:</div>
+                  <div style={{ fontWeight: "bold" }}>1:00pm-6:00pm:</div>
                   <div>Hacking (Submissions end at 5:30pm)</div>
-
-                  <div style={{ fontWeight: "bold" }}>3:00pm-3:30pm:</div>
-                  <div>Agent Workshop w/ Agent or AutoGPT</div>
-
-                  <div style={{ fontWeight: "bold" }}>3:30pm-4:00pm:</div>
-                  <div>Observability Workshop w/ PostHog + Helicone</div>
 
                   <div style={{ fontWeight: "bold" }}>6:00pm:</div>
                   <div>Dinner</div>
@@ -222,7 +212,6 @@ export default function WaitlistPage() {
               </div>
             </div>
 
-            {/* Right Column */}
             <div className="md:w-1/2 md:pl-4">
               <div className="text-left mb-6">
                 <h3 className="text-lg font-bold">Judging Criteria</h3>
@@ -235,7 +224,6 @@ export default function WaitlistPage() {
                 </ul>
               </div>
 
-              {/* Judges */}
               <div className="text-left mb-6">
                 <h3 className="text-lg font-bold">Judges</h3>
                 <ul className="list-disc list-inside">
@@ -269,7 +257,6 @@ export default function WaitlistPage() {
                 </ul>
               </div>
 
-              {/* Prizes */}
               <div className="text-left mb-6">
                 <h3 className="text-lg font-bold">Prizes</h3>
                 <p>
