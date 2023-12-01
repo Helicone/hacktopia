@@ -80,7 +80,7 @@ export default function WaitlistPage() {
               </span>
               <span className="block font-bold">
                 {" "}
-                Location: The Mission, San Francisco{" "}
+                Location:500 Treat Ave, San Francisco{" "}
               </span>
             </p>
           </div>
@@ -271,7 +271,7 @@ export default function WaitlistPage() {
 
               <div className="text-left mb-6">
                 <h3 className="text-lg font-bold">Sign Up Deadline</h3>
-                <p>December 1st, 9am PST</p>
+                <p>December 1st, 11:59pm PST</p>
               </div>
             </div>
           </div>
