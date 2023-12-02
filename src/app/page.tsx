@@ -74,14 +74,20 @@ export default function WaitlistPage() {
               <span className="font-bold">Hacktopia</span>, the place where
               developers and tech enthusiasts collaborate to transform their big
               ideas into reality!
-              <span className="block font-bold mt-8">
-                {" "}
-                Date: December 2nd, 2023{" "}
-              </span>
-              <span className="block font-bold">
-                {" "}
-                Location:500 Treat Ave, San Francisco{" "}
-              </span>
+              <div className="flex flex-col justify-start w-full text-start">
+                <span className="block font-bold mt-8">
+                  {" "}
+                  Date: December 2nd, 2023{" "}
+                </span>
+                <span className="block font-bold">Location:</span>
+                <a
+                  href="https://www.google.com/maps/place/500+Treat+Ave,+San+Francisco"
+                  target="_blank"
+                  className="text-blue-500"
+                >
+                  500 Treat Ave, San Francisco
+                </a>
+              </div>
             </p>
           </div>
           <div className="flex flex-col justify-center w-full">
