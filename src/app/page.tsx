@@ -77,16 +77,8 @@ export default function WaitlistPage() {
               <div className="flex flex-col justify-start w-full text-start">
                 <span className="block font-bold mt-8">
                   {" "}
-                  Date: December 2nd, 2023{" "}
+                  Date: December 2nd, 2023 (CLOSED)
                 </span>
-                <span className="block font-bold">Location:</span>
-                <a
-                  href="https://www.google.com/maps/place/500+Treat+Ave,+San+Francisco"
-                  target="_blank"
-                  className="text-blue-500"
-                >
-                  500 Treat Ave, San Francisco
-                </a>
               </div>
             </p>
           </div>
@@ -98,71 +90,7 @@ export default function WaitlistPage() {
               className="h-96 w-96 mx-auto"
             />
             <div>
-              <form
-                className="space-y-4 max-w-lg mx-auto"
-                onSubmit={handleSubmit}
-              >
-                <div
-                  className="grid grid-cols-2 gap-4"
-                  style={{ gridTemplateColumns: "1fr 1fr" }}
-                >
-                  <input
-                    type="text"
-                    name="first_name"
-                    placeholder="First name"
-                    value={formData.first_name}
-                    onChange={handleChange}
-                    required
-                    className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
-                  />
-                  <input
-                    type="text"
-                    name="last_name"
-                    placeholder="Last name"
-                    value={formData.last_name}
-                    onChange={handleChange}
-                    required
-                    className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
-                  />
-                </div>
-                <div
-                  className="grid grid-cols-2 gap-4"
-                  style={{ gridTemplateColumns: "1fr 1fr" }}
-                >
-                  <input
-                    type="text"
-                    name="company"
-                    placeholder="Company (Optional)"
-                    value={formData.company}
-                    onChange={handleChange}
-                    className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
-                  />
-                  <input
-                    type="text"
-                    name="title"
-                    placeholder="Title (Optional)"
-                    value={formData.title}
-                    onChange={handleChange}
-                    className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
-                  />
-                </div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 dark:border-neutral-700 rounded-lg p-2 dark:text-white dark:bg-gray-800"
-                />
-
-                <button
-                  type="submit"
-                  className="w-full bg-gray-900 text-white rounded-lg p-2"
-                >
-                  Sign Up
-                </button>
-              </form>
+              (CLOSED)
               {message && (
                 <p className="text-center text-green-500 font-bold mt-4">
                   {message}
